@@ -1,0 +1,4 @@
+ItemList:
+  type: array
+  items:
+    type: string

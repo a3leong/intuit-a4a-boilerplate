@@ -1,0 +1,30 @@
+{
+  "name": "express-swagger",
+  "version": "0.1.0",
+  "description": "Basic express server serving swagger middleware with swagger docs.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a3leong/express-swagger.git"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-refs": "^3.0.15",
+    "swagger-routes-express": "^3.1.2",
+    "swagger-tools": "^0.10.4",
+    "swagger-ui-express": "^4.1.4",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js -e js,json,yaml",
+    "production": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

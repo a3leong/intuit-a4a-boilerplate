@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: express-swagger
+  description: Base project for writing a restAPI with swagger middleware with shopping list example
+  version: 0.1.0
+basePath: /v1
+paths:
+  /items:
+    get:
+      summary: Return a list of items
+      operationId: getItems
+      responses:
+        '200':
+          description: 'Success. Returns a list of items in the shopping list.'
+          schema:
+            $ref: "src/swagger/schemas.yaml#/ItemList"
